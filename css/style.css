@@ -1,0 +1,338 @@
+.main-page h2 {
+  font-family: Proxima Nova;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.main-page p {
+  font-family: Proxima Nova light;
+  font-weight: 300;
+}
+
+.main-page a {
+  font-family: Proxima Nova;
+}
+
+.gallery {
+  margin-bottom: 112px;
+}
+.gallery__header {
+  padding-top: 112px;
+  padding-bottom: 56px;
+}
+.gallery__text {
+  font-size: 18px;
+}
+
+.gallery__images {
+  width: 100%;
+}
+.gallery__images .col-md-7 {
+  padding-left: 0;
+  padding-right: 8px;
+}
+.gallery__images .col-sm {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gallery__img {
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+.gallery__img img {
+  width: 100%;
+  filter: grayscale(1);
+  transition: 1s;
+}
+.gallery__img img:hover {
+  filter: none;
+  transition: 1s;
+}
+
+.gallery__images video {
+  object-fit: cover;
+  border-radius: 0px 4px 4px 4px;
+  height: 98.7%;
+}
+
+.controls {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  text-align: center;
+  cursor: pointer;
+}
+.controls p {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.places {
+  margin-bottom: 72px;
+}
+
+.tabs {
+  box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.06);
+  padding-bottom: 25px;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.parking {
+  justify-content: space-between;
+  background: #ffffffb5;
+}
+
+.parking__tab-active {
+  z-index: 0;
+}
+
+.parking__tab {
+  z-index: -1;
+}
+
+.parking__label {
+  padding-left: 12px;
+  font-size: 16px;
+  color: #030925;
+}
+.parking__label:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.separate {
+  content: "";
+  border-right: 1px solid #dfdfdf;
+  height: 24px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 36px;
+}
+
+.parking-col {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+}
+.parking-col img {
+  max-height: 38px;
+}
+.parking-col p {
+  margin-bottom: 0;
+}
+
+.parking__img img {
+  width: 100%;
+}
+
+.parking-info, .lookout-info, .museum-info {
+  margin-top: 72px;
+}
+.parking-info__titles, .lookout-info__titles, .museum-info__titles {
+  margin-bottom: 56px;
+}
+.parking-info__subtitle, .lookout-info__subtitle, .museum-info__subtitle {
+  margin-top: 4px;
+}
+.parking-info__phone-time, .lookout-info__phone-time, .museum-info__phone-time {
+  margin-bottom: 40px;
+}
+
+.lookout {
+  margin-bottom: 72px;
+}
+.lookout__main-img {
+  width: 100%;
+}
+
+.phone {
+  color: #181818;
+  font-size: 24px;
+  font-weight: bold;
+}
+.phone:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.everyday-container {
+  margin-top: 12px;
+}
+
+.everyday {
+  display: inline;
+  padding-left: 8px;
+}
+
+.price {
+  display: flex;
+}
+.price__for-hour {
+  margin-right: 28px;
+}
+.price__for-mounth {
+  margin-left: 28px;
+}
+.price .separate {
+  margin-top: 23px;
+}
+
+.price-value {
+  font-size: 24px;
+  color: #181818;
+  margin-bottom: 8px;
+}
+
+.time {
+  font-size: 16px;
+  color: #848484;
+}
+
+.features p {
+  margin-bottom: 24px;
+}
+
+.features__separate {
+  content: "";
+  border-left: 2px solid #EBAA00;
+  padding-right: 14px;
+  max-height: 12px;
+}
+
+.features__paragraph {
+  display: flex;
+}
+
+.museum {
+  background-image: url(../assets/img/museum.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.museum .price {
+  margin-bottom: 48px;
+}
+.museum .phone, .museum .price-value, .museum .time {
+  color: #fff;
+}
+.museum__btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #EBAA00;
+  border-radius: 4px;
+  color: #fff;
+  transition: 1s;
+}
+.museum__btn:hover {
+  background: #ffb901;
+  transition: 1s;
+  text-decoration: none;
+  color: #fff;
+}
+
+.museum .features {
+  margin-top: 30px;
+}
+
+.main-page .container-fluid {
+  justify-content: center;
+  display: flex;
+}
+
+.container-fluid {
+  max-width: 1440px;
+}
+
+@media (min-width: 20px) and (max-width: 1100px) {
+  .controls {
+    left: 30%;
+    top: 30%;
+  }
+}
+@media (min-width: 20px) and (max-width: 900px) {
+  .controls {
+    left: 25%;
+    top: 25%;
+  }
+}
+@media (min-width: 20px) and (max-width: 767px) {
+  .museum .features {
+    margin-top: 60px;
+  }
+
+  .gallery__images video {
+    min-height: 280px;
+    max-height: 280px;
+  }
+
+  .gallery__images .col-sm {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+  }
+
+  .price {
+    margin-bottom: 40px;
+  }
+
+  .parking-col {
+    margin-bottom: 20px;
+  }
+
+  .parking {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+  .parking .separate {
+    display: none;
+  }
+
+  .gallery__img {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .gallery__images .col-md-7 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .controls {
+    left: 33%;
+    top: 20%;
+  }
+}
+@media (min-width: 480px) and (max-width: 550px) {
+  .controls {
+    left: 23%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .controls {
+    top: 25%;
+    left: 35%;
+  }
+
+  .controls p {
+    display: none;
+  }
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url("../fonts/11096.otf");
+}
+@font-face {
+  font-family: Proxima Nova light;
+  src: url("../fonts/ProximaNova-light.ttf");
+}
+
+/*# sourceMappingURL=style.css.map */
